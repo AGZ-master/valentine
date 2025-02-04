@@ -41,6 +41,10 @@ button {
     left: -50px; /* Move buttons slightly to the left */
 }
 
+button:focus {
+    outline: none; /* Remove blue outline on focus */
+}
+
 #yesButton {
     background-color: #90ee90; /* Mid-light green color for Yes button */
     color: white;
