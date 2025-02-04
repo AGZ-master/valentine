@@ -36,18 +36,19 @@ button {
 }
 
 #yesButton {
-    background-color: #4caf50; /* Green color for Yes button */
+    background-color: #4caf50;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
 #noButton {
-    background-color: #f44336; /* Red color for No button */
+    background-color: #f44336;
     color: white;
     border: none;
     border-radius: 5px;
 }
+
 
 #valentineVideo {
     display: none;
