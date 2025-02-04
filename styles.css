@@ -32,6 +32,21 @@ button {
     cursor: pointer;
     width: 100%; /* Make buttons responsive */
     max-width: 200px; /* Limit button width */
+    position: relative; /* Ensure buttons are positioned relative */
+}
+
+#yesButton {
+    background-color: #4caf50; /* Green color for Yes button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#noButton {
+    background-color: #f44336; /* Red color for No button */
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
 
 #valentineVideo {
@@ -39,4 +54,16 @@ button {
     margin-top: 20px;
     width: 100%; /* Ensure video takes full width */
     max-width: 100%; /* Limit max width */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Reduce font size on smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
 }
