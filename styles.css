@@ -31,19 +31,20 @@ button {
     margin: 10px; /* Margin for spacing */
     font-size: 16px;
     cursor: pointer;
-    border: none;
-    border-radius: 5px;
     width: 100px; /* Fixed width for buttons */
+    border: 2px solid black; /* Add black border */
 }
 
 #yesButton {
     background-color: #4caf50; /* Green color for Yes button */
     color: white;
+    position: relative; /* Ensure Yes button stays in position */
 }
 
 #noButton {
     background-color: #f44336; /* Red color for No button */
     color: white;
+    position: absolute; /* Allow No button to move around */
 }
 
 #valentineVideo {
