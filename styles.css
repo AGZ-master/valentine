@@ -34,10 +34,11 @@ button {
     width: 100px; /* Fixed width for buttons */
     border: 2px solid black; /* Add black border */
     border-radius: 20px; /* Rounded corners */
+    position: relative; /* Ensure buttons stay in position */
 }
 
 #yesButton {
-    background-color: #ffb6c1; /* Light pink color for Yes button */
+    background-color: #90ee90; /* Mid-light green color for Yes button */
     color: white;
     position: relative; /* Ensure Yes button stays in position */
 }
