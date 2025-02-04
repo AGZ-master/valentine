@@ -4,7 +4,7 @@ body {
     align-items: flex-start; /* Move content to the top */
     height: 100vh;
     margin: 0;
-    background: url('file:///C:/Users/amirg/Downloads/lol/valentin.jpg') no-repeat center center fixed;
+    background: url('https://AGZ-master.github.io/ValentineSite/valentin.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: sans-serif; /* Use default font */
 }
