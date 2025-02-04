@@ -4,7 +4,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height instead of height */
     margin: 0;
     background: url('https://AGZ-master.github.io/valentine/valentin.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -16,39 +16,27 @@ body {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
+    max-width: 90%; /* Limit width on small screens */
 }
 
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 3em;
+    font-size: 2em; /* Adjust font size */
     color: #ff69b4;
 }
 
 button {
     padding: 10px 20px;
-    margin: 20px;
+    margin: 10px; /* Reduce margin */
     font-size: 16px;
     cursor: pointer;
-    position: relative;
-}
-
-#yesButton {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-#noButton {
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    width: 100%; /* Make buttons responsive */
+    max-width: 200px; /* Limit button width */
 }
 
 #valentineVideo {
     display: none;
     margin-top: 20px;
-    width: 100%; /* Make video width fit within the container */
-    max-width: 600px; /* Adjust max width to control video size */
+    width: 100%; /* Ensure video takes full width */
+    max-width: 100%; /* Limit max width */
 }
