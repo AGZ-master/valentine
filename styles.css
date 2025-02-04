@@ -18,6 +18,9 @@ body {
     border-radius: 10px;
     max-width: 600px; /* Limit width */
     width: 90%; /* Ensure responsiveness */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -35,12 +38,12 @@ button {
     border: 2px solid black; /* Add black border */
     border-radius: 20px; /* Rounded corners */
     position: relative; /* Ensure buttons stay in position */
+    left: -50px; /* Move buttons slightly to the left */
 }
 
 #yesButton {
     background-color: #90ee90; /* Mid-light green color for Yes button */
     color: white;
-    position: relative; /* Ensure Yes button stays in position */
 }
 
 #noButton {
@@ -66,5 +69,6 @@ button {
         font-size: 14px; /* Adjust button font size */
         padding: 8px 16px; /* Adjust button padding */
         width: 80px; /* Adjust button width */
+        left: -20px; /* Adjust left position for smaller screens */
     }
 }
