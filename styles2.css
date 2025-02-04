@@ -1,32 +1,41 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Move content to the top */
-    height: 100vh;
+    align-items: flex-start;
+    min-height: 100vh; /* Use min-height */
     margin: 0;
     background: url('https://AGZ-master.github.io/valentine/valentin.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: sans-serif; /* Use default font */
+    font-family: sans-serif;
 }
 
 .container {
     position: relative;
     text-align: center;
-    margin-top: 20px; /* Adjust margin to move text up */
+    width: 100%; /* Ensure container takes full width */
+    max-width: 90%; /* Limit width on smaller screens */
+    margin-top: 20px;
 }
 
 h1 {
     position: absolute;
-    top: 20px; /* Adjust position as needed */
+    top: 20px;
     width: 100%;
     text-align: center;
-    font-size: 6em; /* Increased font size */
+    font-size: 6em;
     color: pink;
-    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 0 2px 0 #000, -2px 0 0 #000, 0 -2px 0 #000; /* Black border around letters */
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, -2px 2px 0 #000, 2px -2px 0 #000, 2px 0 0 #000, 0 2px 0 #000, -2px 0 0 #000, 0 -2px 0 #000;
 }
 
 video {
-    width: 100%; /* Make video width fit within the container */
-    height: 100vh; /* Ensure video takes up the full height */
-    object-fit: cover; /* Cover the container */
+    width: 100%; /* Ensure video takes full width */
+    height: auto; /* Ensure video height adjusts proportionally */
+    object-fit: cover;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3em; /* Reduce font size on smaller screens */
+    }
 }
