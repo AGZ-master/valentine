@@ -18,9 +18,6 @@ body {
     border-radius: 10px;
     max-width: 600px; /* Limit width */
     width: 90%; /* Ensure responsiveness */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 h1 {
@@ -37,12 +34,16 @@ button {
     width: 100px; /* Fixed width for buttons */
     border: 2px solid black; /* Add black border */
     border-radius: 20px; /* Rounded corners */
-    position: relative; /* Ensure buttons stay in position */
-    left: -50px; /* Move buttons slightly to the left */
 }
 
 button:focus {
     outline: none; /* Remove blue outline on focus */
+}
+
+button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between buttons */
 }
 
 #yesButton {
@@ -53,7 +54,6 @@ button:focus {
 #noButton {
     background-color: #ff69b4; /* Darker pink color for No button */
     color: white;
-    position: absolute; /* Allow No button to move around */
 }
 
 #valentineVideo {
@@ -73,6 +73,10 @@ button:focus {
         font-size: 14px; /* Adjust button font size */
         padding: 8px 16px; /* Adjust button padding */
         width: 80px; /* Adjust button width */
-        left: -20px; /* Adjust left position for smaller screens */
+    }
+
+    button-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center;
     }
 }
