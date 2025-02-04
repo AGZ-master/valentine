@@ -6,13 +6,10 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: url('https://agz-master.github.io/Valentine/valentin.jpg') no-repeat center center fixed;
+    background: url('https://AGZ-master.github.io/valentine/valentin.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
 }
-
-/* Rest of your CSS */
-
 
 .container {
     text-align: center;
