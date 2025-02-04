@@ -4,7 +4,7 @@ body {
     align-items: flex-start; /* Move content to the top */
     height: 100vh;
     margin: 0;
-    background: url('https://agz-master.github.io/Valentine/valentin.jpg') no-repeat center center fixed;
+    background: url('https://AGZ-master.github.io/valentine/valentin.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: sans-serif; /* Use default font */
 }
@@ -30,4 +30,3 @@ video {
     height: 100vh; /* Ensure video takes up the full height */
     object-fit: cover; /* Cover the container */
 }
-
